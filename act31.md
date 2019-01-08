@@ -2,7 +2,10 @@
 ´´´
 CREATE DATABASE call_list;
 
-´´´
+
+\c call_list
+
+
 CREATE TABLE users (id SERIAL PRIMARY KEY, first_name VARCHAR(15), email VARCHAR(40));
 
 INSERT INTO users (id, first_name, email) values (1, 'Carlos', 'Carlos@gmail.com');
